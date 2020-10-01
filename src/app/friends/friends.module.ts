@@ -1,10 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser'
+import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core'
 import { FriendsComponent } from './friends.component'
 
 @NgModule({
   declarations: [ FriendsComponent ],
-  imports: [ BrowserModule ]
+  imports: [ CommonModule ]
 })
 
-export class AppModule { }
+export class FriendsModule { }
