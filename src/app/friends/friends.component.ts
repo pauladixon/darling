@@ -1,4 +1,4 @@
-import { StringMap } from '@angular/compiler/src/compiler_facade_interface'
+
 import { Component, OnInit } from '@angular/core'
 
 @Component({
@@ -20,5 +20,4 @@ export class FriendsComponent implements OnInit {
       { id: 4, name: 'isa martinez', city: 'pasadena', loveTotal: 299, friendSince: new Date(2020, 3, 3)},
     ]
   }
-
 }
