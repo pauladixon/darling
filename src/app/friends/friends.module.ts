@@ -4,7 +4,8 @@ import { FriendsComponent } from './friends.component'
 
 @NgModule({
   declarations: [ FriendsComponent ],
-  imports: [ CommonModule ]
+  imports: [ CommonModule ],
+  exports: [ FriendsComponent ]
 })
 
 export class FriendsModule { }
