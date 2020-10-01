@@ -3,14 +3,15 @@ import { Component, OnInit } from '@angular/core'
 @Component({
   selector: 'app-root',
   template: `
-    <h1>hello world</h1>
+    <p>{{title}}</p>
     `
 })
 
 export class AppComponent implements OnInit {
+  title = 'darling'
   constructor() {}
 
   ngOnInit() {
-    
+
   }
 }
