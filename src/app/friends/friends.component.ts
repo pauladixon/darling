@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core'
 export class FriendsComponent implements OnInit {
   title: string
   people: any[]
+  
   constructor() { }
 
   ngOnInit() {

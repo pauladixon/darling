@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core'
 })
 
 export class FriendsListComponent implements OnInit {
+  
   filteredFriends: any[] = []
   friendsLoveTotal: number
   currencyCode: string = '<3'
-  
+
   constructor() { }
 
   ngOnInit() {
