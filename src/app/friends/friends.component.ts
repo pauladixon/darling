@@ -15,10 +15,10 @@ export class FriendsComponent implements OnInit {
   ngOnInit() {
     this.title = 'friends'
     this.people = [
-      { id: 1, name: 'john doe', city: 'Phoenix', orderTotal: 9.99, friendSince: new Date(2014, 7, 10) },
-      { id: 2, name: 'jane doe', city: 'Chandler', orderTotal: 19.99, friendSince: new Date(2017, 2, 22)},
-      { id: 3, name: 'michelle thomas', city: 'Seattle', orderTotal: 99.99, friendSince: new Date(2002, 10, 31)},
-      { id: 4, name: 'jim thomas', city: 'New York', orderTotal: 599.99, friendSince: new Date(2002, 10, 31)},
+      { id: 1, name: 'joann ahn', city: 'los angeles', loveTotal: 999, friendSince: new Date(2010, 8, 10) },
+      { id: 2, name: 'tomas diaz', city: 'el sereno', loveTotal: 199, friendSince: new Date(2020, 6, 22)},
+      { id: 3, name: 'hanna denison', city: 'venice', loveTotal: 499, friendSince: new Date(2018, 2, 31)},
+      { id: 4, name: 'isa martinez', city: 'pasadena', loveTotal: 299, friendSince: new Date(2020, 3, 3)},
     ]
   }
 
