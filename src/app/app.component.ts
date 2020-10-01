@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core'
 })
 
 export class AppComponent implements OnInit {
-  title = 'darling'
+  title: string
   constructor() {}
 
   ngOnInit() {
-
+    // we call a service that gets us the data //
+    this.title = 'hello darling'
   }
 }
