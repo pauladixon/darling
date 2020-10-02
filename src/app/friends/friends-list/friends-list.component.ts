@@ -18,4 +18,11 @@ export class FriendsListComponent implements OnInit {
   ngOnInit() {
 
   }
+
+  calculateLove() {
+    this.friendsLoveTotal = 0
+    this.filteredFriends.forEach((friend: IFriend) => {
+      this.friendsLoveTotal += friend.loveTotal
+    })
+  }
 }
