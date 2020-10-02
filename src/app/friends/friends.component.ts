@@ -1,6 +1,8 @@
 
 import { Component, OnInit } from '@angular/core'
 
+import { IFriend } from '../shared/interfaces'
+
 @Component({
   selector: 'app-friends',
   templateUrl: './friends.component.html'
