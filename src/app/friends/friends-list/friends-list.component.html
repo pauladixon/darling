@@ -10,24 +10,28 @@
             <th>love total</th>
         </tr>
     </thead>
-    <tr>
+    <tr *ngFor='let friend of filteredFriends'>
         <td>
             <a>
-                
+                {{ friend.name }}
             </a>
         </td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td colspan="2">&nbsp;</td>
         <td>
-            
+            {{ friend.city }}
+        </td>
+        <td>
+            {{ friend.loveTotal}}
         </td>
     </tr>
-    <tr>
+    <tr *ngIf='filteredFriends && filteredFriends.length'>
+        <td colspan="2">&nbsp;</td>
+        <td>
+            {{ friendsLoveTotal}}
+        </td>
+    </tr>
+    <tr *ngIf='!filteredFriends || !filteredFriends.length'>
         <td colspan="4">no friends found</td>
     </tr>
 </table>
-number of friends:
+number of friends: {{ filteredFriends.length }}
 <br />
