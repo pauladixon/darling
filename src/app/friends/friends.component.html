@@ -1,3 +1,4 @@
-<p>{{title}}</p>
-
+<p [hidden]="!isVisible">{{ title }}</p>
+<button (click)='changeVisibility()'>show/hide</button>
+<br/>
 <app-friends-list></app-friends-list>

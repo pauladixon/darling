@@ -11,6 +11,11 @@ import { IFriend } from '../shared/interfaces'
 export class FriendsComponent implements OnInit {
   title: string
   people: IFriend[]
+  isVisible: true
+
+  changeVisibility() {
+    this.isVisible = !this.isVisible
+  }
   
   constructor() { }
 
