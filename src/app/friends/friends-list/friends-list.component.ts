@@ -25,4 +25,8 @@ export class FriendsListComponent implements OnInit {
       this.friendsLoveTotal += friend.loveTotal
     })
   }
+
+  sort(prop: string) {
+    // a sorter service will handle the sorting
+  }
 }
