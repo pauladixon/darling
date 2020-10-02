@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
+import { IFriend } from '../../shared/interfaces'
+
 @Component({
   selector: 'app-friends-list',
   templateUrl: './friends-list.component.html'
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core'
 
 export class FriendsListComponent implements OnInit {
   
-  filteredFriends: any[] = []
+  filteredFriends: IFriend[] = []
   friendsLoveTotal: number
   currencyCode: string = '<3'
 

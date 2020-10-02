@@ -10,7 +10,7 @@ import { IFriend } from '../shared/interfaces'
 
 export class FriendsComponent implements OnInit {
   title: string
-  people: any[]
+  people: IFriend[]
   
   constructor() { }
 
