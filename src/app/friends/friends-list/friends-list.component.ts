@@ -44,10 +44,10 @@ export class FriendsListComponent implements OnInit {
                friend.city.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
                friend.loveTotal.toString().indexOf(data) > -1
       })
-      this.calculateLove()
     } else {
       this.filteredFriends = this.friends
     }
+    this.calculateLove()
   }
 
   sort(prop: string) {
