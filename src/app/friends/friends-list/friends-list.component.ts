@@ -22,7 +22,7 @@ export class FriendsListComponent implements OnInit {
   
   filteredFriends: IFriend[] = []
   friendsLoveTotal: number
-  currencyCode: string = '<3'
+  currencyCode: string = 'USD'
 
   constructor() { }
 
