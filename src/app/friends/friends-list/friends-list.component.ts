@@ -8,7 +8,17 @@ import { IFriend } from '../../shared/interfaces'
 })
 
 export class FriendsListComponent implements OnInit {
-  @Input() customers: any[]
+  private _friends: IFriend[] = []
+  @Input() get friends(): IFriend[] {
+    return this._friends
+  }
+
+  set friends(value: IFriend[]) {
+    if (value) {
+      this.filteredFriends = this._friends = value
+      this.calculateLove()
+    }
+  }
   
   filteredFriends: IFriend[] = []
   friendsLoveTotal: number
@@ -18,10 +28,6 @@ export class FriendsListComponent implements OnInit {
 
   ngOnInit() {
 
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-    
   }
 
   calculateLove() {
