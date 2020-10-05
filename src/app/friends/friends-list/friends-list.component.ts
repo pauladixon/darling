@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
 
 import { IFriend } from '../../shared/interfaces'
 
@@ -8,6 +8,7 @@ import { IFriend } from '../../shared/interfaces'
 })
 
 export class FriendsListComponent implements OnInit {
+  @Input() customers: any[]
   
   filteredFriends: IFriend[] = []
   friendsLoveTotal: number
@@ -17,6 +18,10 @@ export class FriendsListComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    
   }
 
   calculateLove() {
