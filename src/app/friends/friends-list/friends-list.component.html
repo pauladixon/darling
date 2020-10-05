@@ -20,13 +20,13 @@
             {{ friend.city }}
         </td>
         <td>
-            {{ friend.loveTotal | currency:currencyCode:'symbol' }}
+            {{ friend.loveTotal }}
         </td>
     </tr>
     <tr *ngIf='filteredFriends && filteredFriends.length'>
         <td colspan="2">&nbsp;</td>
         <td>
-            {{ friendsLoveTotal | currency:currencyCode:'symbol'}}
+            {{ friendsLoveTotal }}
         </td>
     </tr>
     <tr *ngIf='!filteredFriends || !filteredFriends.length'>
