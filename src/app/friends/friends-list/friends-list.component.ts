@@ -20,7 +20,7 @@ export class FriendsListComponent implements OnInit {
     }
   }
   
-  filteredFriends: IFriend[] = []
+  filteredFriends: any[] = []
   friendsLoveTotal: number
   currencyCode: string = 'USD'
 
@@ -35,6 +35,19 @@ export class FriendsListComponent implements OnInit {
     this.filteredFriends.forEach((friend: IFriend) => {
       this.friendsLoveTotal += friend.loveTotal
     })
+  }
+
+  filter(data: string) {
+    if (data) {
+      this.filteredFriends = this.friends.filter((friend: IFriend) => {
+        return friend.name.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
+               friend.city.toLowerCase().indexOf(data.toLowerCase()) > -1 ||
+               friend.loveTotal.toString().indexOf(data) > -1
+      })
+      this.calculateLove()
+    } else {
+      this.filteredFriends = this.friends
+    }
   }
 
   sort(prop: string) {
