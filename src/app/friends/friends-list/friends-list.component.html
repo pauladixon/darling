@@ -13,7 +13,7 @@
     <tr *ngFor='let friend of filteredFriends'>
         <td>
             <a>
-                {{ friend.name }}
+                {{ friend.name | lowercase }}
             </a>
         </td>
         <td>
