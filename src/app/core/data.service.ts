@@ -14,7 +14,7 @@ export class DataService {
     constructor(private http: HttpClient) { }
 
     getCustomers() : Observable<IFriend[]> {
-        
+        return this.http.get<IFriend[]>(this.baseUrl + 'friends.json')
     }
 
     private handleError(error: any) {
