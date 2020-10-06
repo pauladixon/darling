@@ -15,6 +15,9 @@ export class DataService {
 
     getCustomers() : Observable<IFriend[]> {
         return this.http.get<IFriend[]>(this.baseUrl + 'friends.json')
+            .pipe(
+                catchError(this.handleError)
+            )
     }
 
     private handleError(error: any) {
