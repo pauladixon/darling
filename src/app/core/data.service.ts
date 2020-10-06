@@ -13,12 +13,24 @@ export class DataService {
 
     constructor(private http: HttpClient) { }
 
-    getCustomers() : Observable<IFriend[]> {
+    getFriends() : Observable<IFriend[]> {
         return this.http.get<IFriend[]>(this.baseUrl + 'friends.json')
             .pipe(
                 catchError(this.handleError)
             )
     }
+
+    getFriend(id: number) : Observable<IFriend> {
+        return this.http.get<IFriend[]>(this.baseUrl + 'friends.json')
+            .pipe(
+                map(friends => {
+                    let friend = friends.filter((friend: IFriend) => friend.id === id)
+                    return (friend && friend.length) ? friend[0] : null
+                }),
+                catchError(this.handleError)
+            )
+    }
+
 
     private handleError(error: any) {
         console.error('server error:', error)
