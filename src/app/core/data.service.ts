@@ -11,9 +11,7 @@ export class DataService {
 
     baseUrl: string = 'assets/'
 
-    constructor() {
-
-    }
+    constructor() { }
 
     private handleError(error: any) {
         console.error('server error:', error)
