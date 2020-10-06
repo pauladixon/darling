@@ -34,7 +34,7 @@ export class DataService {
     getLove(id: number) : Observable<ILove[]> {
         return this.http.get<ILove[]>(this.baseUrl + 'love.json')
             .pipe(
-                map(orders => {
+                map(love => {
                     let friendLove = love.filter((love: ILove) => love.friendId === id)
                     return friendLove
                 }),
