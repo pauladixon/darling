@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core'
 
+import { IFriend } from '../shared/interfaces'
 import { DataService } from '../core/data.service'
 
 @Component({
@@ -15,7 +16,9 @@ export class FriendsComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.title = 'friends'
+    this.title = 'Friends'
+    this.dataService.getFriends()
+      .subscribe((friends: IFriend[]) => this.people = friends)
 
     // this.people = [
     //   { id: 1, name: 'joann ahn', city: 'los angeles', loveTotal: 999, friendSince: new Date(2010, 8, 10) },
