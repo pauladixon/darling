@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core'
+import { SorterService } from 'src/app/core/sorter.service'
 
 import { IFriend } from '../../shared/interfaces'
 
@@ -24,7 +25,7 @@ export class FriendsListComponent implements OnInit {
   friendsLoveTotal: number
   currencyCode: string = 'USD'
 
-  constructor() { }
+  constructor(private sorterService: SorterService) { }
 
   ngOnInit() {
 
@@ -51,6 +52,6 @@ export class FriendsListComponent implements OnInit {
   }
 
   sort(prop: string) {
-    // a sorter service will handle the sorting
+    this.sorterService.sort(this.filteredFriends, prop)
   }
 }
