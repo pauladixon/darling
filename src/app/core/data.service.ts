@@ -11,7 +11,11 @@ export class DataService {
 
     baseUrl: string = 'assets/'
 
-    constructor() { }
+    constructor(private http: HttpClient) { }
+
+    getCustomers() : Observable<IFriend[]> {
+        
+    }
 
     private handleError(error: any) {
         console.error('server error:', error)
