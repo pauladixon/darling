@@ -31,6 +31,17 @@ export class DataService {
             )
     }
 
+    getLove(id: number) : Observable<ILove[]> {
+        return this.http.get<ILove[]>(this.baseUrl + 'love.json')
+            .pipe(
+                map(orders => {
+                    let friendLove = love.filter((love: ILove) => love.friendId === id)
+                    return friendLove
+                }),
+                catchError(this.handleError)
+            )
+    }
+
 
     private handleError(error: any) {
         console.error('server error:', error)
