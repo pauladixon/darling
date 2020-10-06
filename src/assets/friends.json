@@ -1,0 +1,26 @@
+[
+    {
+          "id": 1,
+          "name": "joanie ahn",
+          "city": "los angeles",
+          "loveTotal": 540.99
+    },
+    {
+          "id": 2,
+          "name": "tomás diaz",
+          "city": "el sereno",
+          "loveTotal": 289.99
+    },
+    {
+          "id": 3,
+          "name": "isa martinez",
+          "city": "chicago",
+          "loveTotal": 229.99
+    },
+    {
+          "id": 4,
+          "name": "hanna denison",
+          "city": "venice",
+          "loveTotal": 135.99
+    }
+]
