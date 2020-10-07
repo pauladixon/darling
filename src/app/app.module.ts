@@ -6,9 +6,10 @@ import { CoreModule } from './core/core.module'
 import { FriendsModule } from './friends/friends.module'
 import { SharedModule } from './shared/shared.module'
 import { AppComponent } from './app.component'
+import { AppRoutingModule } from './app-routing.module'
 
 @NgModule({
-  imports: [ BrowserModule, CoreModule, FriendsModule, SharedModule ],
+  imports: [ BrowserModule, CoreModule, FriendsModule, SharedModule, AppRoutingModule ],
   declarations: [ AppComponent ],
   bootstrap: [ AppComponent ]
 })
