@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core'
 @Component({
   selector: 'app-root',
   template: `
-    <app-friends></app-friends>
+    <router-outlet></router-outlet>
     `
 })
 
