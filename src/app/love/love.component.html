@@ -1,0 +1,17 @@
+<div *ngIf='customer'>
+    <h4>love for {{ friend.name | lowercase }}</h4>
+
+    <table 
+        class='table table-hover love-table'
+        *ngFor='let love of love'
+    >
+        <tr *ngFor='let loveToken of love.loveTokens'>
+            <td>{{ loveToken.tokenName }}</td>
+            <td>{{ loveToken.tokenCost | currency:'USD':'symbol'</td>
+        </tr>
+    </table>
+</div>
+<div *ngIf='!friend'>
+    no friend found
+</div>
+<br/>
