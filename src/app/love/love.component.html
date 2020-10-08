@@ -6,7 +6,7 @@
         *ngFor='let love of love'
     >
         <tr *ngFor='let loveToken of love.loveTokens'>
-            <td>{{ loveToken.tokenName }}</td>
+            <td>{{ loveToken.tokenName | lowercase }}</td>
             <td>{{ loveToken.tokenCost }}</td>
         </tr>
     </table>

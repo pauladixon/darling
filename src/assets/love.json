@@ -1,7 +1,7 @@
 [
     {
           "friendId": 1,
-          "loveItems": [
+          "loveTokens": [
               {"id": 1, "tokenName": "Baseball", "tokenCost": 999},
               {"id": 2, "tokenName": "Bat", "tokenCost": 1999}
           ]
@@ -32,43 +32,43 @@
           "friendId": 5,
           "loveTokens": [
               {"id": 10, "tokenName": "Budgie Smugglers", "tokenCost": 1999},
-              {"id": 11, "tokenName": "Swimming Cap", "tokenCost": 5.49}
+              {"id": 11, "tokenName": "Swimming Cap", "tokenCost": 549}
           ]
     },
     {
           "friendId": 6,
           "loveTokens": [
-              {"id": 12, "tokenName": "Bow", "tokenCost": 399.99},
-              {"id": 13, "tokenName": "Arrows", "tokenCost": 69.99}
+              {"id": 12, "tokenName": "Bow", "tokenCost": 39999},
+              {"id": 13, "tokenName": "Arrows", "tokenCost": 6999}
           ]
     },
     {
           "friendId": 7,
           "loveTokens": [
-              {"id": 14, "tokenName": "Baseball", "tokenCost": 9.99},
-              {"id": 15, "tokenName": "Bat", "tokenCost": 19.99}
+              {"id": 14, "tokenName": "Baseball", "tokenCost": 999},
+              {"id": 15, "tokenName": "Bat", "tokenCost": 1999}
           ]
     },
     {
           "friendId": 8,
           "loveTokens": [
-              {"id": 16, "tokenName": "Surfboard", "tokenCost": 299.99},
-              {"id": 17, "tokenName": "Wax", "tokenCost": 5.99},
-              {"id": 18, "tokenName": "Shark Repellent", "tokenCost": 15.99}
+              {"id": 16, "tokenName": "Surfboard", "tokenCost": 29999},
+              {"id": 17, "tokenName": "Wax", "tokenCost": 599},
+              {"id": 18, "tokenName": "Shark Repellent", "tokenCost": 1599}
           ]
     },
     {
           "friendId": 9,
           "loveTokens": [
-              {"id": 19, "tokenName": "Saddle", "tokenCost": 599.99},
-              {"id": 20, "tokenName": "Riding cap", "tokenCost": 79.99}
+              {"id": 19, "tokenName": "Saddle", "tokenCost": 59999},
+              {"id": 20, "tokenName": "Riding cap", "tokenCost": 7999}
           ]
     },
     {
           "friendId": 10,
           "loveTokens": [
-              {"id": 21, "tokenName": "Baseball", "tokenCost": 9.99},
-              {"id": 22, "tokenName": "Bat", "tokenCost": 19.99}
+              {"id": 21, "tokenName": "Baseball", "tokenCost": 999},
+              {"id": 22, "tokenName": "Bat", "tokenCost": 1999}
           ]
     }
 ]
