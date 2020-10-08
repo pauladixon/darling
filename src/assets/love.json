@@ -2,36 +2,36 @@
     {
           "friendId": 1,
           "loveItems": [
-              {"id": 1, "tokenName": "Baseball", "tokenCost": 9.99},
-              {"id": 2, "tokenName": "Bat", "tokenCost": 19.99}
+              {"id": 1, "tokenName": "Baseball", "tokenCost": 999},
+              {"id": 2, "tokenName": "Bat", "tokenCost": 1999}
           ]
     },
     {
           "friendId": 2,
           "loveTokens": [
-              {"id": 3, "tokenName": "Basketball", "tokenCost": 7.99},
-              {"id": 4, "tokenName": "Shoes", "tokenCost": 199.99}
+              {"id": 3, "tokenName": "Basketball", "tokenCost": 799},
+              {"id": 4, "tokenName": "Shoes", "tokenCost": 19999}
           ]
     },
     {
           "friendId": 3,
           "loveTokens": [
-              {"id": 5, "tokenName": "Frisbee", "tokenCost": 2.99},
-              {"id": 6, "tokenName": "Hat", "tokenCost": 5.99}
+              {"id": 5, "tokenName": "Frisbee", "tokenCost": 299},
+              {"id": 6, "tokenName": "Hat", "tokenCost": 599}
           ]
     },
     {
           "friendId": 4,
           "loveTokens": [
-              {"id": 7, "tokenName": "Boomerang", "tokenCost": 29.99},
-              {"id": 8, "tokenName": "Helmet", "tokenCost": 19.99},
-              {"id": 9, "tokenName": "Kangaroo Saddle", "tokenCost": 179.99}
+              {"id": 7, "tokenName": "Boomerang", "tokenCost": 2999},
+              {"id": 8, "tokenName": "Helmet", "tokenCost": 1999},
+              {"id": 9, "tokenName": "Kangaroo Saddle", "tokenCost": 17999}
           ]
     },
     {
           "friendId": 5,
           "loveTokens": [
-              {"id": 10, "tokenName": "Budgie Smugglers", "tokenCost": 19.99},
+              {"id": 10, "tokenName": "Budgie Smugglers", "tokenCost": 1999},
               {"id": 11, "tokenName": "Swimming Cap", "tokenCost": 5.49}
           ]
     },
