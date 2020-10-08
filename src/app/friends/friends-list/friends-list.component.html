@@ -12,8 +12,8 @@
     </thead>
     <tr *ngFor='let friend of filteredFriends'>
         <td>
-            <a>
-                {{ friend.name }}
+            <a [routerLink]="['/love', friend.id]">
+                {{ friend.name | lowercase }}
             </a>
         </td>
         <td>

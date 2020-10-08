@@ -17,8 +17,14 @@ export class LoveComponent implements OnInit {
 
     constructor(private dataService: DataService,
                 private route: ActivatedRoute) {}
-
+ 
     ngOnInit() {
+        let id = +this.route.snapshot.paramMap.get('id')
+        this.dataService.getLove(id).subscribe((love: ILove[]) => {
+            this.love = love
+        })
+
+
         this.dataService.getFriend(id).subscribe((friend: IFriend) => {
             this.friend = friend
         })
