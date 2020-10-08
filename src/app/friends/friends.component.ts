@@ -16,7 +16,7 @@ export class FriendsComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.title = 'Friends'
+    this.title = 'friends'
     this.dataService.getFriends()
       .subscribe((friends: IFriend[]) => this.people = friends)
 
