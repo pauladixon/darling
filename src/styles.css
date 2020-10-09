@@ -5,12 +5,28 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: monospace;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+thead {
+    font-weight: normal;
+    background-color: magenta;
+    color: white;
 }
 
 th {
     width: 200px;
+    font-weight: normal;
 }
 
 td {
     height: 30px;
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: burlywood;
 }
