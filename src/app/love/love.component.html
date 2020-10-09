@@ -1,8 +1,8 @@
-<div *ngIf='friend'>
+<div *ngIf='friend' class='love'>
     <h4>love for {{ friend.name | lowercase }}</h4>
 
     <table 
-        class='table'
+        class='love-table'
         *ngFor='let love of love'
     >
         <tr *ngFor='let loveToken of love.loveTokens'>

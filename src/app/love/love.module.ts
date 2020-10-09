@@ -8,7 +8,7 @@ import { LoveComponent } from './love.component'
 import { LoveRoutingModule } from './love-routing.module'
 
 @NgModule({
-    imports: [ CommonModule, FormsModule, SharedModule, LoveRoutingModule ],
+    imports: [ CommonModule, FormsModule, SharedModule, LoveRoutingModule, RouterModule ],
     declarations: [ LoveComponent ]
 })
 
