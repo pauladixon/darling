@@ -1,3 +1,7 @@
 .friends-table {
     padding: 20px;
 }
+
+tr {
+    width: 100px;
+}

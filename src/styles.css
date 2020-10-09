@@ -6,3 +6,11 @@ html {
     align-items: center;
     text-align: center;
 }
+
+th {
+    width: 200px;
+}
+
+td {
+    height: 30px;
+}
