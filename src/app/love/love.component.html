@@ -2,7 +2,7 @@
     <h4>love for {{ friend.name | lowercase }}</h4>
 
     <table 
-        class='table table-hover love-table'
+        class='table'
         *ngFor='let love of love'
     >
         <tr *ngFor='let loveToken of love.loveTokens'>
