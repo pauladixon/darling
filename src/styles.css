@@ -8,6 +8,7 @@ html {
     font-family: monospace;
     background-color: darkolivegreen;
     color: white;
+    margin-top: 20px;
 }
 
 thead {
@@ -33,7 +34,7 @@ a {
 
 .title {
     color: burlywood;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h4 {
