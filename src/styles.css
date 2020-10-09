@@ -28,5 +28,10 @@ td {
 
 a {
     text-decoration: none;
+    color: bisque;
+}
+
+.title {
     color: burlywood;
+    font-size: 16px;
 }
